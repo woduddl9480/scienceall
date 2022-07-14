@@ -1,1 +1,7 @@
-.test {background-color: aliceblue;}
+
+body .wrap #container .section_first{
+    width: 100%;
+    height: 1446px;
+    background-image: url(/img/bg1.png);
+    background-repeat: no-repeat;
+}
