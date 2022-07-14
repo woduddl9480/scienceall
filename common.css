@@ -1,9 +1,8 @@
-span { font-family: "Noto Sans KR"}
-
 
 .font_yellow {
     color: #ffff00;
 }
+
 .wrap #container span, p, li{
     font-family: "Noto Sans KR" !important;
 }
