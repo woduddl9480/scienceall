@@ -1,7 +1,36 @@
+span { font-family: "Noto Sans KR"}
 
-body .wrap #container .section_first{
+
+.font_yellow {
+    color: #ffff00;
+}
+.wrap #container span, p, li{
+    font-family: "Noto Sans KR" !important;
+}
+
+.wrap #container .section_first{
     width: 100%;
     height: 1446px;
     background-image: url(/img/bg1.png);
     background-repeat: no-repeat;
+}
+.wrap #container .section_first .infobox {
+    position: absolute;
+    top: 640px;
+    right: 670px;
+    display: inline-block;
+    background-color: #ff6a4d;
+    border-radius: 24px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.24);
+}
+.wrap #container .section_first .infobox_text {
+    margin: 24px 100px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    
+}
+
+.wrap #container .recomandProgram {
+    background-color: #f0f7fa;
 }
