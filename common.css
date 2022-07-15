@@ -416,11 +416,12 @@
     
     .wrap #container .exhibit .exhibit_text {
         max-width: 300px;
+        height: 48px;
         margin: 0 auto;
         padding: 8px 10px;
         font-size: 20px;
         font-weight: bold;
-        line-height: 2;
+        line-height: 1.6;
         letter-spacing: -1.2px;
         color: #fff;
         background-color: #01bafb;
@@ -516,34 +517,39 @@
 
     .wrap #container .recommendProgram {
         background-color: #f0f7fa;
-        height: 1248px;
+        height: 1675px;
+        padding: 0 20px;
     }
     
     .recommendProgram .exhibit {
-        width: 360px;
+        width: 240px;
         margin: 0 auto;
         padding-top: 60px;
         margin-top: 240px;
     }
     
     .recommendProgram ul {
-        width: 760px;
-        height: 64px;
+        width: 100%;
+        height: 116px;
         overflow: hidden;
         margin: 0 auto;
     }
     
     .recommendProgram ul li {
-        margin: 0 5px;
         float: left;
+        margin: 0 10px 10px 0;
+    }
+
+    .recommendProgram ul li:nth-child(2n) {
+        margin-right: 0;
     }
     
     .recommendProgram ul li a {
         display: block;
-        width: 180px;
-        height: 56px;
+        width: 170px;
+        height: 53px;
         color: #5e6366;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         border: 1px solid #cadce5;
         border-radius: 8px;
@@ -565,19 +571,11 @@
     }
     
     .recommendProgram ul li.on a::after {
-        content: '';
-        width: 16px;
-        height: 16px;
-        border-radius: 4px;
-        background: #ff6a4d;
-        position: absolute;
-        left: 50%;
-        bottom: -12px;
-        transform: rotate(45deg) translateX(-50%);
+        display: none;
     }
     
     .recommendProgram .plusBtnArea {
-        width: 1180px;
+        width: 100%;
         height: 32px;
         text-align: right;
         margin: 8px auto 0;
@@ -588,17 +586,18 @@
     }
     
     .recommendProgram .plusBtnArea span {
-        font-size: 17px;
-        line-height: 32px;
+        font-size: 14px;
+        line-height: 24px;
         color: #222;
         font-weight: 600;
-        margin-right: 10px;
+        margin-right: 6px;
     }
     
     .recommendProgram .plusBtnArea button {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         background: url(/img/plus.png) no-repeat center #fff;
+        background-size: 12px 12px;
         border: 1px solid #cadce5;
     }
     
@@ -608,11 +607,11 @@
     }
     
     .programItem {
-        width: 380px;
-        height: 446px;
+        width: 350px;
+        height: 411px;
         background: #fff;
         border-radius: 10px;
-        float: left;
+        float: unset;
         overflow: hidden;
         margin: 0 20px 20px 0;
         position: relative;
@@ -624,17 +623,17 @@
     }
     
     .programItem .img_box {
-        width: 380px;
-        height: 214px;
+        width: 100%;
+        height: 197px;
     }
     
     .programItem .info_box {
-        padding: 15px 20px 25px;
+        padding: 15px 18px 24px;
     }
     
     .programItem .info_box>p {
         width: 340px;
-        height: 80px;
+        height: 74px;
         font-size: 22px;
         color: #222;
         line-height: 32px;
@@ -648,24 +647,24 @@
     }
     
     .programItem .info_box>div p {
-        font-size: 17px;
+        font-size: 15px;
         color: #666;
         font-weight: 500;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
     }
     
     .programItem .info_box>div p span {
-        font-size: 16px;
+        font-size: 15px;
         color: #aaa;
         margin-right: 10px;
         font-weight: 600;
     }
     
     .programItem .info_box>div>span {
-        margin-top: 10px;
+        margin-top: 15px;
         display: block;
         color: #444;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 600;
     }
     
