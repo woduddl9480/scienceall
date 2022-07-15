@@ -1,3 +1,6 @@
+.mt60 {
+    margin-top: 60px;
+}
 
 .font_yellow {
     color: #ffff00;
@@ -7,18 +10,23 @@
     font-family: "Noto Sans KR" !important;
 }
 
-.wrap #container .section_first{
+.wrap #container .section_first .infobox .none_pc{
+    display: none;
+}
+
+
+.wrap #container .exhibit_1 {
     width: 100%;
-    height: 1446px;
-    background-image: url(/img/bg1.png);
-    background-repeat: no-repeat;
+    height: auto;
+    background-image: url(/img/blue_main.png); 
 }
 
-.wrap #container .section_first .infobox {
-    padding-top: 640px;
-}
 
-.wrap #container .section_first .infobox .infobox_text {
+.wrap #container .exhibit_1 .infobox_text {
+    position: absolute;
+    top: 640px;
+    right: 50%;
+    transform: translate(50%);
     width: 632px;
     margin: 0 auto;
     background-color: #ff6a4d;
@@ -30,11 +38,11 @@
     line-height: 36px;
 }
 
-.wrap #container .section_first .exhibit {
+.wrap #container .section_first .exhibit_1 {
     padding-top: 60px;
 }
 
-.wrap #container .exhibit .exhibit_text {
+.wrap #container .section_first .exhibit_1 .exhibit_text {
     max-width: 462px;
     margin: 0 auto;
     padding: 13px 35px;
@@ -45,7 +53,20 @@
     color: #fff;
     background-color: #01bafb;
     border-radius: 35px;
+    margin-top: 60px;
+}
 
+.exhibit_text {
+    max-width: 462px;
+    margin: 0 auto;
+    padding: 13px 35px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: -1.68px;
+    color: #fff;
+    background-color: #01bafb;
+    border-radius: 35px;
 }
 
 .exhibit_item {
@@ -383,16 +404,21 @@
         font-family: "Noto Sans KR" !important;
     }
 
-    .wrap #container .section_first{
-       
+    /* .wrap #container .section_first{
         background-color: #002b80;
         background-image: url(/img/bg_m.png);
         background-repeat: no-repeat;
         background-size: contain;
+    } */
+
+   
+
+    .wrap #container .section_first .infobox .none_mobile {
+        display: none;
     }
 
-    .wrap #container .section_first .infobox {
-        padding-top: 545px;
+    .wrap #container .section_first .infobox .none_pc {
+        display: block;
     }
     
     .wrap #container .section_first .infobox .infobox_text {
@@ -441,8 +467,9 @@
         height: 411px;
         background: #fff;
         border-radius: 10px;
+        float: unset;
         overflow: hidden;
-        margin: 0 0 20px 0;
+        margin: 0 20px 20px 0;
         position: relative;
         box-shadow: 10px 10px 20px 0 rgb(0 0 0 / 24%);
     }
@@ -494,18 +521,18 @@
     }
     
     .programItem_top .tagArea {
-        width: 110px;
-        height: 32px;
+        width: 103px;
+        height: 29px;
         position: absolute;
         left: 0;
         top: 16px;
     }
     
     .programItem_top .tagArea div {
-        width: 90px;
+        width: 83px;
         height: 100%;
         color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         text-align: center;
         align-items: center;
@@ -525,7 +552,6 @@
         width: 240px;
         margin: 0 auto;
         padding-top: 60px;
-        margin-top: 191px;
     }
     
     .recommendProgram ul {
