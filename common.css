@@ -31,13 +31,16 @@
 }
 
 .wrap #container .section_first .exhibit {
-    position: absolute;
-    top: 820px;
-    right: 50%;
-    transform: translate(50%);
+   
+    
 }
 
 .wrap #container .section_first .exhibit .exhibit_text {
+    position: absolute;
+    top: 820px;
+    display: inline-block;
+    right: 50%;
+    transform: translate(50%);
     padding: 13px 35px;
     font-size: 28px;
     font-weight: bold;
@@ -47,6 +50,18 @@
     background-color: #01bafb;
     border-radius: 35px;
 
+}
+
+.exhibit_item .programItem {
+    width: 380px;
+    height: 446px;
+    background: #fff;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    position: relative;
+    
 }
 
 .wrap #container .recomandProgram {
