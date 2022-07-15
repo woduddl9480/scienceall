@@ -37,7 +37,7 @@
     transform: translate(50%);
 }
 
-.wrap #container .section_first .exhibit .exhibit_text {
+.wrap #container .exhibit .exhibit_text {
     padding: 13px 35px;
     font-size: 28px;
     font-weight: bold;
@@ -49,8 +49,15 @@
 
 }
 
-.wrap #container .recomandProgram {
+.wrap #container .recommendProgram {
     background-color: #f0f7fa;
+    height: 1248px;
+}
+
+.recommendProgram .exhibit {
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 60px;
 }
 
 .recommendProgram ul {
@@ -110,11 +117,16 @@
     margin: 8px auto 0;
 }
 
+.recommendProgram .plusBtnArea * {
+    float: right;
+}
+
 .recommendProgram .plusBtnArea span {
     font-size: 17px;
     line-height: 32px;
     color: #222;
-    font-weight: 500;
+    font-weight: 600;
+    margin-right: 10px;
 }
 
 .recommendProgram .plusBtnArea button {
@@ -126,11 +138,10 @@
 
 .programList {
     width: 1180px;
-    height: 1248px;
     margin: 32px auto 0;
 }
 
-.programList .programItem {
+.programItem {
     width: 380px;
     height: 446px;
     background: #fff;
@@ -142,20 +153,20 @@
     box-shadow: 10px 10px 15px #ccc;
 }
 
-.programList .programItem:nth-child(3n) {
+.programItem:nth-child(3n) {
     margin-right: 0;
 }
 
-.programList .programItem .img_box {
+.programItem .img_box {
     width: 380px;
     height: 214px;
 }
 
-.programList .programItem .info_box {
+.programItem .info_box {
     padding: 15px 20px 25px;
 }
 
-.programList .programItem .info_box>p {
+.programItem .info_box>p {
     width: 340px;
     height: 80px;
     font-size: 22px;
@@ -166,25 +177,25 @@
     letter-spacing: -1.32px;
 }
 
-.programList .programItem .info_box>div {
+.programItem .info_box>div {
     margin-top: 15px;
 }
 
-.programList .programItem .info_box>div p {
+.programItem .info_box>div p {
     font-size: 17px;
     color: #666;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.programList .programItem .info_box>div p span {
+.programItem .info_box>div p span {
     font-size: 16px;
     color: #aaa;
     margin-right: 10px;
     font-weight: 600;
 }
 
-.programList .programItem .info_box>div>span {
+.programItem .info_box>div>span {
     margin-top: 10px;
     display: block;
     color: #444;
@@ -192,7 +203,7 @@
     font-weight: 600;
 }
 
-.programList .programItem .tagArea {
+.programItem .tagArea {
     width: 110px;
     height: 32px;
     position: absolute;
@@ -200,7 +211,7 @@
     top: 16px;
 }
 
-.programList .programItem .tagArea div {
+.programItem .tagArea div {
     width: 90px;
     height: 100%;
     color: #fff;
@@ -214,27 +225,27 @@
     padding-bottom: 1px;
 }
 
-.programList .programItem .tagArea div.on {
+.programItem .tagArea div.on {
     display: flex;
 }
 
-.programList .programItem .tagArea div.green {
+.programItem .tagArea div.green {
     background: #92d050;
 }
 
-.programList .programItem .tagArea div.orange {
+.programItem .tagArea div.orange {
     background: #4472c4;
 }
 
-.programList .programItem .tagArea div.navy {
+.programItem .tagArea div.navy {
     background: #ff6600;
 }
 
-.programList .programItem .tagArea div.purple {
+.programItem .tagArea div.purple {
     background: #9999ff;
     width: 110px;
 }
 
-.programList .programItem .tagArea div.gray {
+.programItem .tagArea div.gray {
     background: #bfbfbf;
 }
