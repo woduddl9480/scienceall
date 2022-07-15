@@ -13,31 +13,30 @@
     background-image: url(/img/bg1.png);
     background-repeat: no-repeat;
 }
+
 .wrap #container .section_first .infobox {
-    position: absolute;
-    top: 640px;
-    right: 50%;
-    transform: translate(50%);
+    padding-top: 640px;
+}
+
+.wrap #container .section_first .infobox .infobox_text {
+    width: 632px;
+    margin: 0 auto;
     background-color: #ff6a4d;
     border-radius: 24px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.24);
-}
-.wrap #container .section_first .infobox_text {
-    margin: 24px 100px;
+    padding: 24px 100px;
     color: #fff;
     font-size: 24px;
     line-height: 36px;
-    
 }
 
 .wrap #container .section_first .exhibit {
-    position: absolute;
-    top: 820px;
-    right: 50%;
-    transform: translate(50%);
+    padding-top: 60px;
 }
 
 .wrap #container .exhibit .exhibit_text {
+    max-width: 462px;
+    margin: 0 auto;
     padding: 13px 35px;
     font-size: 28px;
     font-weight: bold;
@@ -47,6 +46,119 @@
     background-color: #01bafb;
     border-radius: 35px;
 
+}
+
+.exhibit_item {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.programItem_top {
+    width: 380px;
+    height: 446px;
+    background: #fff;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+
+.programItem_top:nth-child(3n) {
+    margin-right: 0;
+}
+
+.programItem_top .img_box {
+    width: 380px;
+    height: 214px;
+}
+
+.programItem_top .info_box {
+    padding: 15px 20px 25px;
+}
+
+.programItem_top .info_box>p {
+    width: 340px;
+    height: 80px;
+    font-size: 22px;
+    color: #222;
+    line-height: 32px;
+    font-weight: 800;
+    border-bottom: 1px solid #eee;
+    letter-spacing: -1.32px;
+}
+
+.programItem_top .info_box>div {
+    margin-top: 15px;
+}
+
+.programItem_top .info_box>div p {
+    font-size: 17px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.programItem_top .info_box>div p span {
+    font-size: 16px;
+    color: #aaa;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.programItem_top .info_box>div>span {
+    margin-top: 10px;
+    display: block;
+    color: #444;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.programItem_top .tagArea {
+    width: 110px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+
+.programItem_top .tagArea div {
+    width: 90px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    display: none;
+    padding-bottom: 1px;
+}
+
+.programItem_top .tagArea div.on {
+    display: flex;
+}
+
+.programItem_top .tagArea div.green {
+    background: #92d050;
+}
+
+.programItem_top .tagArea div.navy {
+    background: #4472c4;
+}
+
+.programItem_top .tagArea div.orange {
+    background: #ff6600;
+}
+
+.programItem_top .tagArea div.purple {
+    background: #9999ff;
+    width: 110px;
+}
+
+.programItem_top .tagArea div.gray {
+    background: #bfbfbf;
 }
 
 .wrap #container .recommendProgram {
@@ -233,11 +345,11 @@
     background: #92d050;
 }
 
-.programItem .tagArea div.orange {
+.programItem .tagArea div.navy {
     background: #4472c4;
 }
 
-.programItem .tagArea div.navy {
+.programItem .tagArea div.orange {
     background: #ff6600;
 }
 
@@ -249,3 +361,320 @@
 .programItem .tagArea div.gray {
     background: #bfbfbf;
 }
+
+/* 모바일 반응형 */
+@media (max-width:768px) {
+    span, p, li{
+        font-family: "Noto Sans KR" !important;
+    }
+
+    .wrap #container .section_first{
+       
+        background-color: #002b80;
+        background-image: url(/img/bg_m.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .wrap #container .section_first .infobox {
+        padding-top: 545px;
+    }
+    
+    .wrap #container .section_first .infobox .infobox_text {
+        font-family: "Noto Sans KR" !important;
+        max-width: 352px;
+        margin: 0 auto;
+        background-color: #ff6a4d;
+        border-radius: 24px;
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.24);
+        padding: 11px 15px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .wrap #container .section_first .exhibit {
+        padding-top: 60px;
+        background-color: #002b80;
+    }
+    
+    .wrap #container .exhibit .exhibit_text {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 8px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: -1.2px;
+        color: #fff;
+        background-color: #01bafb;
+        border-radius: 35px;
+        text-align: center;
+    
+    }
+
+    .exhibit_item {
+        padding-top: 40px;
+        flex-wrap: wrap;
+
+        
+    }
+    .programItem_top {
+        width: 350px;
+        height: 411px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 0 20px 0;
+        position: relative;
+    }
+
+    .programItem_top:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    .programItem_top .img_box {
+        width: 380px;
+        height: 214px;
+    }
+    
+    .programItem_top .info_box {
+        padding: 15px 20px 25px;
+    }
+    
+    .programItem_top .info_box>p {
+        width: 313px;
+        height: 70px;
+        font-size: 22px;
+        color: #222;
+        font-weight: 800;
+        border-bottom: 1px solid #eee;
+        letter-spacing: -1.32px;
+    }
+    
+    .programItem_top .info_box>div {
+        margin-top: 15px;
+    }
+    
+    .programItem_top .info_box>div p {
+        font-size: 15px;
+        color: #666;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .programItem_top .info_box>div p span {
+        font-size: 15px;
+        color: #aaa;
+        margin-right: 10px;
+        font-weight: 600;
+    }
+    
+    .programItem_top .info_box>div>span {
+        margin-top: 10px;
+        display: block;
+        color: #444;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .programItem_top .tagArea {
+        width: 110px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 16px;
+    }
+    
+    .programItem_top .tagArea div {
+        width: 90px;
+        height: 100%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 5px 5px 0;
+        display: none;
+        padding-bottom: 1px;
+    }
+
+    .wrap #container .recommendProgram {
+        background-color: #f0f7fa;
+        height: 1248px;
+    }
+    
+    .recommendProgram .exhibit {
+        width: 360px;
+        margin: 0 auto;
+        padding-top: 60px;
+        margin-top: 200px;
+    }
+    
+    .recommendProgram ul {
+        width: 760px;
+        height: 64px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .recommendProgram ul li {
+        margin: 0 5px;
+        float: left;
+    }
+    
+    .recommendProgram ul li a {
+        display: block;
+        width: 180px;
+        height: 56px;
+        color: #5e6366;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #cadce5;
+        border-radius: 8px;
+        line-height: 56px;
+        letter-spacing: -1.2px;
+    }
+    
+    .recommendProgram ul li a:hover {
+        text-decoration: none;
+        color: #5e6366;
+    }
+    
+    .recommendProgram ul li.on a {
+        color: #fff;
+        background: #ff6a4d;
+        border: none;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .recommendProgram ul li.on a::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        background: #ff6a4d;
+        position: absolute;
+        left: 50%;
+        bottom: -12px;
+        transform: rotate(45deg) translateX(-50%);
+    }
+    
+    .recommendProgram .plusBtnArea {
+        width: 1180px;
+        height: 32px;
+        text-align: right;
+        margin: 8px auto 0;
+    }
+    
+    .recommendProgram .plusBtnArea * {
+        float: right;
+    }
+    
+    .recommendProgram .plusBtnArea span {
+        font-size: 17px;
+        line-height: 32px;
+        color: #222;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    
+    .recommendProgram .plusBtnArea button {
+        width: 32px;
+        height: 32px;
+        background: url(/img/plus.png) no-repeat center #fff;
+        border: 1px solid #cadce5;
+    }
+    
+    .programList {
+        width: 1180px;
+        margin: 32px auto 0;
+    }
+    
+    .programItem {
+        width: 380px;
+        height: 446px;
+        background: #fff;
+        border-radius: 10px;
+        float: left;
+        overflow: hidden;
+        margin: 0 20px 20px 0;
+        position: relative;
+        box-shadow: 10px 10px 15px #ccc;
+    }
+    
+    .programItem:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    .programItem .img_box {
+        width: 380px;
+        height: 214px;
+    }
+    
+    .programItem .info_box {
+        padding: 15px 20px 25px;
+    }
+    
+    .programItem .info_box>p {
+        width: 340px;
+        height: 80px;
+        font-size: 22px;
+        color: #222;
+        line-height: 32px;
+        font-weight: 800;
+        border-bottom: 1px solid #eee;
+        letter-spacing: -1.32px;
+    }
+    
+    .programItem .info_box>div {
+        margin-top: 15px;
+    }
+    
+    .programItem .info_box>div p {
+        font-size: 17px;
+        color: #666;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .programItem .info_box>div p span {
+        font-size: 16px;
+        color: #aaa;
+        margin-right: 10px;
+        font-weight: 600;
+    }
+    
+    .programItem .info_box>div>span {
+        margin-top: 10px;
+        display: block;
+        color: #444;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .programItem .tagArea {
+        width: 110px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 16px;
+    }
+    
+    .programItem .tagArea div {
+        width: 90px;
+        height: 100%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 5px 5px 0;
+        display: none;
+        padding-bottom: 1px;
+    }
+}
+
