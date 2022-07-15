@@ -30,6 +30,25 @@
     
 }
 
+.wrap #container .section_first .exhibit {
+    position: absolute;
+    top: 820px;
+    right: 770px;
+}
+
+.wrap #container .section_first .exhibit .exhibit_text {
+    display: inline-block;
+    padding: 13px 35px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: -1.68px;
+    color: #fff;
+    background-color: #01bafb;
+    border-radius: 35px;
+
+}
+
 .wrap #container .recomandProgram {
     background-color: #f0f7fa;
 }
