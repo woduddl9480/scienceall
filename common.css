@@ -70,6 +70,7 @@
 .recommendProgram ul li {
     margin: 0 5px;
     float: left;
+    cursor: pointer;
 }
 
 .recommendProgram ul li a {
@@ -139,6 +140,11 @@
 .programList {
     width: 1180px;
     margin: 32px auto 0;
+    display: none;
+}
+
+.programList.on {
+    display: block;
 }
 
 .programItem {
@@ -151,6 +157,13 @@
     margin: 0 20px 20px 0;
     position: relative;
     box-shadow: 10px 10px 15px #ccc;
+}
+
+.programItem a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .programItem:nth-child(3n) {
@@ -196,11 +209,12 @@
 }
 
 .programItem .info_box>div>span {
-    margin-top: 10px;
+    margin-top: 15px;
     display: block;
     color: #444;
     font-size: 17px;
     font-weight: 600;
+    letter-spacing: -0.68px;
 }
 
 .programItem .tagArea {
@@ -234,11 +248,11 @@
 }
 
 .programItem .tagArea div.orange {
-    background: #4472c4;
+    background: #ff6600;
 }
 
 .programItem .tagArea div.navy {
-    background: #ff6600;
+    background: #4472c4;
 }
 
 .programItem .tagArea div.purple {
