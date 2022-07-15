@@ -30,6 +30,192 @@
     
 }
 
-.wrap #container .recomandProgram {
+.wrap #container .recommendProgram {
     background-color: #f0f7fa;
+}
+
+.recommendProgram ul {
+    width: 760px;
+    height: 64px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.recommendProgram ul li {
+    margin: 0 5px;
+    float: left;
+}
+
+.recommendProgram ul li a {
+    display: block;
+    width: 180px;
+    height: 56px;
+    color: #5e6366;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #cadce5;
+    border-radius: 8px;
+    line-height: 56px;
+    letter-spacing: -1.2px;
+}
+
+.recommendProgram ul li a:hover {
+    text-decoration: none;
+    color: #5e6366;
+}
+
+.recommendProgram ul li.on a {
+    color: #fff;
+    background: #ff6a4d;
+    border: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.recommendProgram ul li.on a::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #ff6a4d;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.recommendProgram .plusBtnArea {
+    width: 1180px;
+    height: 32px;
+    text-align: right;
+    margin: 8px auto 0;
+}
+
+.recommendProgram .plusBtnArea span {
+    font-size: 17px;
+    line-height: 32px;
+    color: #222;
+    font-weight: 500;
+}
+
+.recommendProgram .plusBtnArea button {
+    width: 32px;
+    height: 32px;
+    background: url(/img/plus.png) no-repeat center #fff;
+    border: 1px solid #cadce5;
+}
+
+.programList {
+    width: 1180px;
+    height: 1248px;
+    margin: 32px auto 0;
+}
+
+.programList .programItem {
+    width: 380px;
+    height: 446px;
+    background: #fff;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    position: relative;
+    box-shadow: 10px 10px 15px #ccc;
+}
+
+.programList .programItem:nth-child(3n) {
+    margin-right: 0;
+}
+
+.programList .programItem .img_box {
+    width: 380px;
+    height: 214px;
+}
+
+.programList .programItem .info_box {
+    padding: 15px 20px 25px;
+}
+
+.programList .programItem .info_box>p {
+    width: 340px;
+    height: 80px;
+    font-size: 22px;
+    color: #222;
+    line-height: 32px;
+    font-weight: 800;
+    border-bottom: 1px solid #eee;
+    letter-spacing: -1.32px;
+}
+
+.programList .programItem .info_box>div {
+    margin-top: 15px;
+}
+
+.programList .programItem .info_box>div p {
+    font-size: 17px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.programList .programItem .info_box>div p span {
+    font-size: 16px;
+    color: #aaa;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.programList .programItem .info_box>div>span {
+    margin-top: 10px;
+    display: block;
+    color: #444;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.programList .programItem .tagArea {
+    width: 110px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+
+.programList .programItem .tagArea div {
+    width: 90px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    display: none;
+    padding-bottom: 1px;
+}
+
+.programList .programItem .tagArea div.on {
+    display: flex;
+}
+
+.programList .programItem .tagArea div.green {
+    background: #92d050;
+}
+
+.programList .programItem .tagArea div.orange {
+    background: #4472c4;
+}
+
+.programList .programItem .tagArea div.navy {
+    background: #ff6600;
+}
+
+.programList .programItem .tagArea div.purple {
+    background: #9999ff;
+    width: 110px;
+}
+
+.programList .programItem .tagArea div.gray {
+    background: #bfbfbf;
 }
