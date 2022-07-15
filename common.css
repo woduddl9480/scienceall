@@ -19,6 +19,7 @@
     width: 100%;
     height: auto;
     background-image: url(/img/blue_main.png); 
+    padding-bottom: 60px;
 }
 
 .wrap #container .section_first .exhibit_1 {
@@ -45,7 +46,7 @@
     padding-top: 60px;
 }
 
-.wrap #container .exhibit_text {
+.wrap #container .exhibit_1 .exhibit_text {
     max-width: 462px;
     margin: 0 auto;
     padding: 13px 35px;
@@ -460,6 +461,21 @@
         padding-bottom: 40px;
         background: #002b80;
     }
+
+    .wrap #container .section_first .exhibit_1 .exhibit_text {
+        max-width: 300px;
+        height: 48px;
+        margin: 0 auto;
+        padding: 8px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.6;
+        letter-spacing: -1.2px;
+        color: #fff;
+        background-color: #01bafb;
+        border-radius: 35px;
+        text-align: center;
+    }
     
     .wrap #container .exhibit_text {
         max-width: 300px;
@@ -490,7 +506,7 @@
         border-radius: 10px;
         float: unset;
         overflow: hidden;
-        margin: 0 20px 20px 0;
+        margin: 0 0 20px 0;
         position: relative;
         box-shadow: 10px 10px 20px 0 rgb(0 0 0 / 24%);
     }
