@@ -16,8 +16,8 @@
 .wrap #container .section_first .infobox {
     position: absolute;
     top: 640px;
-    right: 670px;
-    display: inline-block;
+    right: 50%;
+    transform: translate(50%);
     background-color: #ff6a4d;
     border-radius: 24px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.24);
@@ -30,7 +30,26 @@
     
 }
 
-.wrap #container .recommendProgram {
+.wrap #container .section_first .exhibit {
+    position: absolute;
+    top: 820px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.wrap #container .section_first .exhibit .exhibit_text {
+    padding: 13px 35px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: -1.68px;
+    color: #fff;
+    background-color: #01bafb;
+    border-radius: 35px;
+
+}
+
+.wrap #container .recomandProgram {
     background-color: #f0f7fa;
 }
 
