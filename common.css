@@ -517,7 +517,7 @@
 
     .wrap #container .recommendProgram {
         background-color: #f0f7fa;
-        height: 1675px;
+        height: auto;
         padding: 0 20px;
     }
     
