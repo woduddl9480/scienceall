@@ -4,6 +4,7 @@
 
 .font_yellow {
     color: #ffff00;
+    font-weight: 600;
 }
 
 .wrap #container span, p, li{
